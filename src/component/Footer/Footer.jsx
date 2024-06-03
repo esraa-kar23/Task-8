@@ -1,3 +1,9 @@
+import behance from '../../../src/assets/img/footerIcons/behance.png'
+import linkedin from '../../../src/assets/img/footerIcons/linkdin.png'
+import facebook from '../../../src/assets/img/footerIcons/facebook.png'
+import instagram from '../../../src/assets/img/footerIcons/instgram.png'
+import twitter from '../../../src/assets/img/footerIcons/twitter.png'
+import logo from '../../../src/assets/img/logo.png'
 import './Footer.css';
 
 export default function Footer() {
@@ -6,7 +12,7 @@ export default function Footer() {
       <div className="footer-one">
       <div className='one flex-col'>
             <div className="title-footer">
-            <img src="../../../public/logo.png" alt="" />
+            <img src={logo} alt="" />
             <span>.agency</span>
             </div>
           <div className='head-office'>
@@ -52,11 +58,11 @@ export default function Footer() {
         <div className='connection flex-col'>
             <span>Keep In Touch</span>
             <div className="social-media">
-                <a href=""><img src="../../../public/footerIcons/facebook.png" alt="" /></a>
-                <a href=""><img src="../../../public/footerIcons/behance.png" alt="" /></a>
-                <a href=""><img src="../../../public/footerIcons/linkdin.png" alt="" /></a>
-                <a href=""><img src="../../../public/footerIcons/instgram.png" alt="" /></a>
-                <a href=""><img src="../../../public/footerIcons/twitter.png" alt="" /></a>
+                <a href=""><img src={facebook}/></a>
+                <a href=""><img src={behance} /></a>
+                <a href=""><img src={linkedin} /></a>
+                <a href=""><img src={instagram} /></a>
+                <a href=""><img src={twitter}/></a>
             </div>
         </div>
         </div>

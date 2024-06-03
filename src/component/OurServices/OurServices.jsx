@@ -1,5 +1,6 @@
+import pattern from '../../../src/assets/img/pattren.png'
+import pattern2 from '../../../src/assets/img/output-onlinepngtools.png';
 import './OurServices.css'
-
 export default function OurServices() {
     return (
         <>
@@ -23,7 +24,7 @@ export default function OurServices() {
                             <li>Market research and competitors study.</li>
                         </ul>
                         <h3>We walk with you from A to Z.</h3>
-                        <img src="../../../public/pattren.png" alt="" />
+                        <img src={pattern} alt="" />
                     </div>
                     <div className="card card-2">
                         <span className='span-2'>Marketing</span>
@@ -42,7 +43,7 @@ export default function OurServices() {
                             <li>Search engine optimization ( SEO ).</li>
                             <li>Social media marketing & campaigns.</li>
                         </ul>
-                        <img className='pattern' src="../../../public/output-onlinepngtools.png" alt="" />
+                        <img className='pattern' src={pattern2} />
                     </div>
                 </div>
             </div>

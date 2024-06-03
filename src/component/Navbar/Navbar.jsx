@@ -1,12 +1,13 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons'
+import logo from '../../../src/assets/img/logo.svg'
 import './Navbar.css';
 
 export default function Navbar() {
   return (
     <nav className='navbar'>
         <div className='nav-items-one'>
-            <a href="#"><img src="../../../public/logo.svg" alt="logo" /></a>
+            <a href="#"><img src={logo} alt="logo" /></a>
             <span className='Digital' style={{fontSize: "17px", color: "#696969"}}>Digital Marketing Agency</span>
         </div>
         <ul className='nav-items'>
