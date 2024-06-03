@@ -1,0 +1,122 @@
+.hosting {
+    background-color: #282828;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+}
+.hosting h2 {
+    color: #fff;
+}
+.hosting .cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.hosting .spans span,
+.hosting .spans p:nth-child(2) {
+    font-weight: 600;
+}
+.hosting .one {
+    margin-inline: 30px;
+}
+.hosting .two {
+    margin-inline: -30px;
+}
+.hosting .span {
+    padding-inline: 21px;
+}
+li {
+    list-style: none;
+}
+.hosting .cards .card {
+    width: 22vw;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 14px;
+    padding: 20px 15px;
+    line-height: 20px;
+    position: relative;
+}
+.hosting .cards .card::after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 22px;
+    background-color: #ff8500;
+    border-radius: 14px 14px 0 0;
+}
+.hosting .cards .card-2::after {
+    background-color: #a513ff;
+}
+.hosting .cards .card-3::after {
+    background-color: #71aa27;
+}
+.hosting .cards .card-4::after {
+    background-color: #1d5edd;
+}
+.hosting .cards .card span {
+    font-size: 20px;
+    font-weight: 600;
+    display: inline-block;
+    margin: 15px 0;
+}
+.hosting .cards .card p {
+    margin-bottom: 15px;
+}
+.hosting .cards .card .pro {
+    margin-bottom: 10px;
+    width: 350px;
+}
+.hosting .cards .card button{
+    all: unset;
+    width: 90%;
+    border: 3px solid #ff8500;
+    padding: 10px 8px;
+    margin: 20px auto;
+    border-radius: 12px;
+    color: #ff8500;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    display: block;
+}
+.hosting .cards .card-2 button{
+    border: 3px solid #a513ff;
+    color: #a513ff;
+}
+.hosting .cards .card-3 button{
+    border: 3px solid #71aa27;
+    color: #71aa27;
+}
+.hosting .cards .card-4 button{
+    border: 3px solid #1d5edd;
+    color: #1d5edd;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+    .hosting .cards {
+       flex-wrap: wrap;
+    }
+    .hosting .cards .card {
+        width: 80%;
+        margin: 10px auto;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .hosting {
+        width: 100%;
+        overflow: hidden;
+    }
+    .hosting .cards {
+        flex-wrap: wrap;
+     }
+    .hosting .cards .card {
+        width: 80%;
+        margin: 10px auto;
+    }
+}
